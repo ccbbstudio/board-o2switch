@@ -24,4 +24,4 @@ define('__WHOIS_API_KEY__', ''); // Clé API (API Layer)
 ## 4. Vous pouvez connecter à present :
 - Identifiant : root
 - Mots de passe : azertyuiop1A
-Possibilité de mettre à jour le pass ou crée un utilisateur sur PHPMyAdmin table : user (cryptage mots de passe : MD5)
+- Possibilité de mettre à jour le pass ou crée un utilisateur sur PHPMyAdmin table : user (cryptage mots de passe : MD5)
