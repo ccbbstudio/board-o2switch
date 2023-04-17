@@ -1,0 +1,167 @@
+.header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 250px;
+	background: #fff;
+	border-right: 1px solid #ffecff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 999;
+}
+
+.logo{
+	padding: 10px;
+	strong{
+		color: #e30066;
+	}
+}
+.menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li{
+		margin-bottom: 2px;
+
+		&.has-child{
+			position: relative;
+
+			ul{
+				list-style: none;
+				margin: 0;
+				padding:0 0 0 25px;
+
+				li{
+					margin: 0;
+				}
+				a{
+					font-weight: normal;
+					color:$color-black;
+					transition: .7s;
+
+					&:hover{
+						color:$color-purple;
+					}
+
+					&::before{
+						display: none;
+					}
+				}
+
+			}
+		}
+	}
+
+	a{
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		color: #222;
+		gap:8px;
+		padding:5px 15px;
+		position: relative;
+		transition: .2s;
+		font-weight: bold;
+
+
+		&::before{
+			content: '';
+			display: block;
+			position: absolute;
+			left:0;
+			top: 0;
+			height: 100%;
+			width: 2px;
+			background: $color-purple;
+			transform: translateX(-100%);
+			transition: .7s;
+		}
+
+		&.active,
+		&:hover{
+			color: #e30066;
+			&::before{
+				transform: translateX(0);
+			}
+		}
+
+
+		i{
+			width: 16px;
+		}
+
+		span{
+			flex-grow: 1;
+		}
+	}
+}
+
+/* user-widget */
+.user-widget{
+	padding: 15px;
+
+	.user-widget--card{
+		padding: 15px;
+		display: flex;
+		align-items: center;
+		gap:10px;
+		background: $color-bg-light;
+		border-radius: 6px;
+
+		.user-widget--img{
+			width: 50x;
+			img{
+				width: 50px;
+				height: 50px;
+				border-radius: 25px;
+				object-fit: cover;
+				display: block;
+				text-align: center;
+			}
+		}
+		.user-widget--content{
+			flex-grow: 1;
+
+			span{
+				display: flex;
+
+				&:first-child{
+					font-weight: bold;
+				}
+
+				&:last-child{
+					font-size: .8em;
+				}
+			}
+		}
+	}
+
+	.user-menu{
+		margin: 10px 0;
+		padding: 0;
+		list-style: none;
+
+		a{
+			text-decoration: none;
+			color: $color-black;
+			gap:8px;
+			display: flex;
+			align-items: center;
+
+
+			&:hover, &:focus{
+				color: $color-purple;
+			}
+
+			i{
+				width: 16px;
+			}
+
+			span{
+				flex-grow: 1;
+			}
+		}
+	}
+}

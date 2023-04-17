@@ -1,0 +1,112 @@
+.col-ndd{
+	width: 33%;
+}
+.col-category{
+	width: 15%;
+}
+.col-owner{
+	width: 14%;
+}
+.col-server{
+	width: 18%;
+}
+.col-ip{
+	width: 12%;
+}
+.col-expiration{
+	width: 8%;
+}
+
+
+
+
+
+.date-tag{
+	display: inline-block;
+	line-height: 0;
+	padding: 12px 9px;
+	border-radius: 3px;
+	color: $color-white;
+	font-size: .8em;
+
+	&.date-red{
+		background: $color-red;
+	}
+	&.date-orange{
+		background: $color-orange;
+	}
+	&.date-green{
+		background: $color-green;
+	}
+}
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+
+
+	.tooltiptext {
+		visibility: hidden;
+		font-size: .8em;
+		background-color: #555;
+		color: #fff;
+		white-space: nowrap;
+		text-align: center;
+		padding:3px 6px;
+		border-radius: 6px;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0;
+		transition: opacity 0.3s;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #555 transparent transparent transparent;
+		}
+	}
+
+	&:hover{
+		cursor: pointer;
+		.tooltiptext {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+.ndd-name{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	gap:8px;
+
+	.ndd--edit{
+		color: $color-blue;
+		opacity: 0;
+		visibility: 0;
+	}
+
+	&:hover{
+		.ndd--edit{
+			opacity: 1;
+			visibility: 1;
+		}
+	}
+}
+
+
+.ndd-name--content{
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}

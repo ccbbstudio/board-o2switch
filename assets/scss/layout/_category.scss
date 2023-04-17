@@ -1,0 +1,27 @@
+.category-name__box{
+	display: flex;
+	align-items: center;
+	gap:10px;
+
+	div{
+		&:first-child{
+			width: 15px;
+			height:15px;
+			border-radius: 8px;
+			display: inline-block;
+		}
+
+		&:last-child{
+			flex-grow: 1;
+		}
+	}
+}
+
+.category-tag{
+	display: inline-block;
+	line-height: 0;
+	padding: 10px;
+	border-radius: 3px;
+	color: $color-white;
+	font-size: .8em;
+}

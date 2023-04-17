@@ -1,0 +1,73 @@
+.w-100{
+	width: 100%;
+}
+
+.w-30{
+	width: 30%;
+}
+.dataTables_length{
+	margin-bottom: 15px;
+}
+
+.dataTables_filter{
+	margin-bottom: 15px;
+}
+.table-big-data{
+	font-size: 14px;
+	margin: 15px 0 !important;
+	overflow: hidden;
+	background: #fff;
+	border: 0 !important;
+	border-radius: 4px;
+	box-shadow: 0 3px 10px rgba(10,37,64,0.05);
+	transition: box-shadow .5s;
+
+	tr:not(:last-child){
+		td{
+			border-bottom: 1px solid #e4e9f2;
+		}
+	}
+}
+.actions--list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap:10px;
+	justify-content: center;
+}
+
+.btn-action{
+	text-decoration: none;
+	color: #fff;
+	background: #e30066;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 10px 12px;
+	line-height: 0;
+	transition: 0.2s;
+	border: none;
+
+	&.btn-view{
+		background:$color-orange ;
+
+		&:hover, &:focus{
+			background: darken($color-orange,10%);
+		}
+	}
+	&.btn-edit{
+		background: $color-blue;
+
+		&:hover, &:focus{
+			background: darken($color-blue, 10%);
+		}
+	}
+	&.btn-delete{
+		background: $color-red;
+
+		&:hover, &:focus{
+			background: darken($color-red, 10%);
+		}
+	}
+}

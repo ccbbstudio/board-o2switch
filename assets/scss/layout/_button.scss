@@ -1,0 +1,17 @@
+button[type=submit] {
+	background-color: #e30066;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 4px;
+	font-family:  'Poppins', sans-serif;
+}
+
+button[type=submit]:hover {
+	background-color: #7d0038;
+	color: #fff;
+	font-family:  'Poppins', sans-serif;
+}

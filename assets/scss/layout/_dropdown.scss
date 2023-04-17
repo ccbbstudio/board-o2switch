@@ -1,0 +1,38 @@
+.dropdown-box{
+	position: relative;
+
+}
+
+.dropdown-toggle { 
+	padding: 0;
+	background:transparent;
+	border: none;
+	box-shadow: none;
+	padding: 5px;
+	color: $color-green;
+	font-size: 18px;
+
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+ul.dropdown { 
+	display: none;
+	z-index: 2;
+	position: absolute;
+	top: 100%;
+	margin-top:0;
+	padding:0;
+	background: #777;
+
+	li { list-style-type: none;
+
+		a { text-decoration: none;
+			padding: 0em 1em;
+			display: block;
+			color: $color-white;
+		}
+	}
+}
+
