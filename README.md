@@ -9,18 +9,19 @@ Crée un BDD et importer le fichier  via PHPMyAdmin
 
 
 ## 3. config.php
-BOARD_NAME : Nom afficher comme logo
 
-DB_HOST : Host BDD
-DB_NAME : Nom de la BDD
-DB_USER : Utilisateur
-DB_PASSWORD : Mots de pass d'utilisateur
+```php
+define('BOARD_NAME', ''); // Nom afficher comme logo
 
-__WHOIS_API_KEY__ : Clé API (API Layer)
+define('DB_HOST', 'localhost'); // Host BDD
+define('DB_NAME', ''); // Nom de la BDD
+define('DB_USER', ''); // Utilisateur
+define('DB_PASSWORD', ''); // Mots de pass d'utilisateur
 
+define('__WHOIS_API_KEY__', ''); // Clé API (API Layer)
+```
 
 ## 4. Vous pouvez connecter à present :
-login : root
-Password : azertyuiop1A
-
-(Possibilité de mettre à jour le pass ou crée un utilisateur sur PHPMyAdmin table : user, cryptage pass MD5)
+- Identifiant : root
+- Mots de passe : azertyuiop1A
+Possibilité de mettre à jour le pass ou crée un utilisateur sur PHPMyAdmin table : user (cryptage mots de passe : MD5)
